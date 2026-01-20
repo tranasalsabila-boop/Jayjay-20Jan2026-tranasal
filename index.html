@@ -4,6 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Komunitas Perkebunan Organik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(246, 246, 142);
+            margin: 20px;
+        }
+        h1 {
+            color: #a348b0eb;
+            text-align: center;
+        }
+        td {
+            font-size: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 300px;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100px;
+            height: 35px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var nama = document.getElementById ("nama").value;
+            var email = document.getElementById ("email").value;
+            var password = document.getElementById ("password").value;
+            if (nama == "" || email == "" || password == "") {
+                alert("Semua bidang harus diisi!")
+                return false;
+        
+            }    
+        }
+    </script>
 </head>
 <body>
     <h1>Form Komunitas Perkebunan Organik</h1>
@@ -38,5 +74,6 @@
         <a href="audio/nature.mp3">mp3</a>
         <a href="audio/nature.ogg">ogg</a>
     </audio>
+
 </body>
 </html>
