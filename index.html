@@ -35,17 +35,18 @@
             var password = document.getElementById ("password").value;
             if (nama == "" || email == "" || password == "") {
                 alert("Semua bidang harus diisi!")
-                return false;
-        
-            }    
+                return false;}
+                alert("Pendaftaran berhasil!");
+                return true;    
         }
+        document.getElementById("btnSubmit").addEventListener("click", validateForm);
     </script>
 </head>
 <body>
     <h1>Form Komunitas Perkebunan Organik</h1>
     <br>
-    <table>
-        <form action ="index.html" method="post">
+    <form action ="index.html" method="post" onsubmit="return validateForm ()">
+        <table>
             <tr>
                 <td><label for ="nama">Nama Lengkap:</label></td>
                 <td><input type="text" id="nama" name="nama" required></td>
@@ -58,10 +59,10 @@
                 <td><label for ="password">Kata Sandi:</label></td>
                 <td><input type="password" id="password" name="password" required></td>
             </tr>
-        </form>
-    </table>
+        </table>
+        <input type="submit" id="btnSubmit" value="Daftar">
+    </form>
     <br>
-    <input type="submit" value="Daftar">
     <br><br>
     <video controls src="video/berkebun.mp4">
         Download video berkebun di sini:
