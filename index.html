@@ -45,7 +45,7 @@
 <body>
     <h1>Form Komunitas Perkebunan Organik</h1>
     <br>
-    <form action ="index.html" method="post" onsubmit="return validateForm ()">
+    <form action ="index.html" method="post" autocomplete="off" onsubmit="return validateForm ()">
         <table>
             <tr>
                 <td><label for ="nama">Nama Lengkap:</label></td>
@@ -62,15 +62,16 @@
         </table>
         <input type="submit" id="btnSubmit" value="Daftar">
     </form>
-    <br>
     <br><br>
-    <video controls src="video/berkebun.mp4">
+    <video autoplay controls muted>
+        <source src="video/berkebun.mp4">
         Download video berkebun di sini:
         <a href="video/berkebun.mp4">mp4</a>
         <a href="video/berkebun.ogg">webm</a>
     </video>
     <br><br>
-    <audio controls src="audio/nature.mp3">
+    <audio autoplay loop controls>
+        <source src="audio/nature.mp3">
         Download audio alam di sini:
         <a href="audio/nature.mp3">mp3</a>
         <a href="audio/nature.ogg">ogg</a>
